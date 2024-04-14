@@ -1,0 +1,72 @@
+body {
+    font-family:"quicksand",sans-serif;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content (assuming elements aren't too tall) */
+    min-height: 100vh; /* Set minimum height for full viewport */
+    margin: 0; /* Remove default margin */
+    background-color: #f5f5f5; /* Light gray background */
+    background-image: url(look.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  }
+  
+  #container {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff; /* White background for the container */
+    text-align: center; /* Center text within the container */
+  }
+  
+  h1 {
+    margin-bottom: 10px;
+  }
+  
+  #newTask, #addButton {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  #addButton {
+    cursor: pointer;
+    background-color: #3498db; /* Blue */
+    color: white;
+  }
+  
+  #taskList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .task-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex; /* Allow for inline styling of completion checkbox */
+    justify-content: space-between; /* Space between task text and delete button */
+    align-items: center; /* Align vertically */
+  }
+  
+  .task-item:last-child {
+    border-bottom: none;
+  }
+  
+  .task-text {
+    line-height: 1.5; /* Adjust line spacing for better readability */
+  }
+  
+  .completed {
+    text-decoration: line-through; /* Strikethrough completed tasks */
+    color: #ccc; /* Grayed out completed tasks */
+  }
+  
+  .delete-button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: #999; /* Gray delete button color */
+  }
+  
